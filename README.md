@@ -1,2 +1,2 @@
-# Group_Project
-This project is for our software development course. It's a group project.
+# A dynamic web-site
+This project is for my univercity course. It's a full stack development dynamic website , based on kid's learning platfrom of programming.
