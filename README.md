@@ -12,7 +12,7 @@ KiddoLearn is an engaging and dynamic web-based platform designed for teenagers 
 - Database: phpmyadmin
 
 # Interface
-![Uploading Home.png…]()
+[![Uploading Home.png…]()](https://github.com/MDParvezSakib/KiddoLearn/blob/main/Home.png?raw=true)
 [![Uploading Home page 2.png…]()](https://github.com/MDParvezSakib/KiddoLearn/blob/ba5184314419e2491870ee115e19812403ae673e/Home%20page%202.png)
 
 
