@@ -13,6 +13,6 @@ KiddoLearn is an engaging and dynamic web-based platform designed for teenagers 
 
 # Interface
 ![Uploading Home.png…]()
-![Uploading Home page 2.png…]()
+[![Uploading Home page 2.png…]()](https://github.com/MDParvezSakib/KiddoLearn/blob/ba5184314419e2491870ee115e19812403ae673e/Home%20page%202.png)
 
 
