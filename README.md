@@ -4,7 +4,8 @@ KiddoLearn is an engaging and dynamic web-based platform designed for teenagers 
 - Interactive coding tutorials.
 - Beginner-friendly courses on popular programming languages like Python, JavaScript, and Scratch.
 - Quizzes and exercises to enhance learning.
-- Progress tracking and badges for achievements. 
+- Progress tracking and badges for achievements.
+  
 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬 𝐔𝐬𝐞𝐝
 - Frontend: HTML, CSS, JavaScript
 - Backend: (Optional for advanced functionality) Node.js, Django, or Flask
