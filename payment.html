@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .payment-method {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .payment-method:hover {
+            background-color: #f0f8ff;
+            border-color: #007bff;
+        }
+
+        .payment-method input[type="radio"] {
+            display: none;
+        }
+
+        .payment-method img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        .payment-method label {
+            flex-grow: 1;
+            margin-bottom: 0;
+        }
+
+        .payment-method input[type="radio"]:checked + label {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .review {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+        }
+
+        .alert-message {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn-continue {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-continue:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Payment Method</h3>
+
+        <form id="payment-form">
+            <!-- Payment Methods -->
+            <div class="payment-method">
+                <input type="radio" name="paymentMethod" id="bkash" value="bKash">
+                <label for="bkash">
+                    <img src="img/bkash-logo.png" alt="bKash Logo"> bKash
+                </label>
+            </div>
+            <div class="payment-method">
+                <input type="radio" name="paymentMethod" id="nagad" value="Nagad">
+                <label for="nagad">
+                    <img src="img/n-logo.png" alt="Nagad Logo"> Nagad
+                </label>
+            </div>
+            <div class="payment-method">
+                <input type="radio" name="paymentMethod" id="rocket" value="Rocket">
+                <label for="rocket">
+                    <img src="img/r-logo.png" alt="Rocket Logo"> Rocket
+                </label>
+            </div>
+            <div class="payment-method">
+                <input type="radio" name="paymentMethod" id="upay" value="Upay">
+                <label for="upay">
+                    <img src="img/upay-logo.png" alt="Upay Logo"> Upay
+                </label>
+            </div>
+            <div class="payment-method">
+                <input type="radio" name="paymentMethod" id="visa" value="Visa">
+                <label for="visa">
+                    <img src="img/visa-logo.png" alt="Visa Logo"> Other Cards & MFS
+                </label>
+            </div>
+
+
+
+            <!-- Continue Button -->
+            <button type="button" id="continue-button" class="btn-continue">Continue</button>
+        </form>
+
+        <!-- Alert Message -->
+        <div class="alert alert-info alert-message" id="alert-message">
+            <strong>The Payment System will upgrade soon.</strong>
+        </div>
+    </div>
+
+    <script>
+        // Add event listener to the "Continue" button
+        document.getElementById("continue-button").addEventListener("click", function () {
+            const alertMessage = document.getElementById("alert-message");
+            alertMessage.style.display = "block";
+            alertMessage.scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>
